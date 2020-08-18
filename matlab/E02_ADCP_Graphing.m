@@ -65,6 +65,7 @@ s1 = subplot(2,1,1)
   set(gca,'fontsize',8);
   grid('off');
   ylabel('Depth (m)')
+  ylim([0 1000]);
   
 s2 = subplot(2,1,2)
   scatter3(timeB,depthB,0*depthB,12,velocityB,'.');
@@ -74,6 +75,7 @@ s2 = subplot(2,1,2)
   set(gca,'fontsize',8);
   grid('off');
   ylabel('Depth (m)')
+  ylim([0 1000]);
  
 % Set size of the plot
 set(gcf,'position',[680 42 1045 954]);
